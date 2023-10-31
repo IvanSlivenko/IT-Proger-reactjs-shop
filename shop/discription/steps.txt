@@ -1,0 +1,40 @@
+1. VSC
+2. Node.js
+3. Новий терміна Git Bash
+4. npx create-react-app shop
+5. Очистка проекта
+
+з папки public видаляємо всі файли окрім index.html
+в  index.html  чистимо все до стану зображенного у 
+файлі example-index.html
+
+в папці src залишаємо лише :
+
+app.js
+index.js
+index.css
+
+package-lock.json
+package.json
+
+README.md
+.gitignore
+
+----------------------------------------------
+в index.css видаляємо всі стилі
+----------------------------------------------
+в app.js редагуємо до стану example-app.js
+----------------------------------------------
+в index.js редагуємо до стану examle-index.js
+----------------------------------------------
+
+6. ES7+ React/Redux/React-Native snippets   
+    install
+rfs потім ентер додає структуру компонента
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+npm i @babel/plugin-proposal-private-property-in-object
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+7. npm i react-icons

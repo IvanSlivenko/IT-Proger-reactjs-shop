@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@300;600&display=swap'); */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+    background: #fff;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.wrapper{
+
+    /* border: 1px solid black; */
+    width: 1280px;
+    margin: 50px auto;
+}
+
+header .logo{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header ul.nav{
+float: right;
+list-style: none;
+}
+
+header ul.nav li{
+display: inline;
+margin-left: 25px;
+cursor: pointer;
+
+}
+
+header ul.nav li:hover{
+opacity: 0.5 ;
+transition: opacity 500ms ease;
+}
+header .shop-cart-button{
+  float: right;
+  cursor: pointer;
+  transition: color 500ms ease;
+}
+
+header .shop-cart-button:hover,
+header .shop-cart-button.active{
+ color: #dc3d3d;
+}
+
+header .presentation{
+    margin: 50px 0;
+    background: url(./img/sofa.jpg) no-repeat ;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #bcbcbc;
+    position: relative;
+}
+
+header .presentation::after{
+    content: 'Меблі ваших мрій';
+  
+    position: absolute;
+    top:25px;
+    left:60px;
+    
+    font-size: 75px;
+    font-weight:600;
+    width: 800px;
+    color:#fff;
+
+}
+
+header .presentation::before{
+    content: 'за доступними цінами';
+  
+    position: absolute;
+    top:115px;
+    left:60px;
+    
+    font-size: 30px;
+    font-weight:600; 
+
+    width: 500px;
+    color:#fff;
+
+}
+
+footer{
+    text-align: center;
+    margin-top: 100px;   
+}
