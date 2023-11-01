@@ -38,3 +38,7 @@ npm i @babel/plugin-proposal-private-property-in-object
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 7. npm i react-icons
+
+8. https://html-css-js.com/css/generator/box-shadow/
+
+9. rce потім ентер - додає клас компонента

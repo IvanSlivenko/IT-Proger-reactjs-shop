@@ -19,6 +19,9 @@ body{
     width: 1280px;
     margin: 50px auto;
 }
+header{
+    position: relative;
+}
 
 header .logo{
     font-weight: 600;
@@ -44,12 +47,29 @@ transition: opacity 500ms ease;
 header .shop-cart-button{
   float: right;
   cursor: pointer;
-  transition: color 500ms ease;
+  transition: color, transform  500ms ease;
 }
 
 header .shop-cart-button:hover,
 header .shop-cart-button.active{
  color: #dc3d3d;
+ transform: scale(1.5);
+}
+
+header .shop-cart{
+/* border: 1px solid black; */
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 450px;
+    min-height: 100px;
+    background: #fafafa;
+
+    -webkit-box-shadow: 5px 7px 15px 4px #606060; 
+    box-shadow: 5px 7px 15px 4px #606060;
+
+    z-index: 1000;
+
 }
 
 header .presentation{

@@ -17,6 +17,11 @@ export default function Header(props) {
             onClick={() => setCartOpen((cartOpen = !cartOpen))}
             className={`shop-cart-button ${cartOpen && 'active'}`}
           />
+          {cartOpen && (
+            <div className='shop-cart'>
+            </div>
+          )}
+
         </div>
         <div className="presentation"></div>
       </header>
