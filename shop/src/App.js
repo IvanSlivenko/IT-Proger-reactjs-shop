@@ -64,11 +64,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <Header />
-        <Items items={this.state.items} />
+        <Header choiceOrders={this.state.orders } />
+        <Items items={this.state.items} onAdd={this.addToOrder} />
         <Footer />
       </div>
-    )
+    );
   }
 
   addToOrder(item) {
