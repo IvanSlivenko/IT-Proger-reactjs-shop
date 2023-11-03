@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer"
 import Items from "./components/items";
+import Categories from "./components/Categories";
 // import test from "../public/img/21066_6686646.jpg";
 // import test from "../public/img/nut-tree-07-1000x1000.jpg";
 // import test from "../public/img/oxford.jpg";
@@ -14,6 +15,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       orders: [],
+      currentItems:[],
       items: [
         {
           id: 1,
@@ -59,16 +61,30 @@ class App extends React.Component {
         },
       ],
     };
-    this.addToOrder = this.addToOrder.bind(this)
+    this.state.currentItems = this.state.items;
+    this.addToOrder = this.addToOrder.bind(this);
+    this.deleteOrder = this.deleteOrder.bind(this);
+    this.chooseCategory = this.chooseCategory.bind(this);
   }
   render() {
     return (
       <div className="wrapper">
-        <Header choiceOrders={this.state.orders } />
-        <Items items={this.state.items} onAdd={this.addToOrder} />
+        <Header choiceOrders={this.state.orders} onDelete={this.deleteOrder} />
+        <Categories chooseCategory={this.chooseCategory} />
+        <Items items={this.state.currentItems} onAdd={this.addToOrder} />
         <Footer />
       </div>
     );
+  }
+
+chooseCategory(category){ 
+  this.setState({
+    currentItems:this.state.currentItems.filter(el=>el.category===category)
+  })
+}
+
+  deleteOrder(id) { 
+    this.setState({orders: this.state.orders.filter(el=>el.id !== id)})
   }
 
   addToOrder(item) {

@@ -10,7 +10,10 @@ export class Order extends Component {
         <img src={"./img/" + this.props.OrderItem.img} />
         <h2>{this.props.OrderItem.title}</h2>
         <b>{this.props.OrderItem.price} грн</b>
-        <FaTrash className='delete-icon'/>
+        <FaTrash
+          className="delete-icon"
+          onClick={() => this.props.onDelete(this.props.OrderItem.id)}
+        />
       </div>
     );
   }
