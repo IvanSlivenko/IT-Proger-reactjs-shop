@@ -183,7 +183,28 @@ header .presentation::before{
     
 }
 
+.full-item{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    overflow: auto;
 
+}
+
+.full-item >div{
+    width: 600px;
+    position: relative;
+    margin: 10% auto;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 9px;
+
+
+}
 
 main{
     display: flex;
@@ -203,7 +224,7 @@ main .item{
 }
 
 main .item img,
-.full-item .item img{
+.full-item  img{
     width: 100%;
     border-radius: 10px 10px 0 0;
     transition: transform 500ms ease ;
